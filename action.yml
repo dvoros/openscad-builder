@@ -1,0 +1,13 @@
+# action.yml
+name: 'Openscad builder'
+description: 'Build STL files from Openscad using Gradle'
+inputs:
+  gradle-task:
+    description: 'Gradle task to execute.'
+    required: false
+    default: 'allStl'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.gradle-task }}
