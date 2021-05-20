@@ -3,7 +3,9 @@
 This action builds an Openscad project as defined in the Gradle build script of
 the project.
 
+## Requirements
 
+You must define your Openscad build(s) as a Gradle task.
 
 ## Example usage
 

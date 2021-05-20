@@ -1,6 +1,9 @@
 # action.yml
 name: 'Openscad builder'
 description: 'Build STL files from Openscad using Gradle'
+branding:
+  icon: 'box'  
+  color: 'green'
 inputs:
   gradle-task:
     description: 'Gradle task to execute.'
